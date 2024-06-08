@@ -19,7 +19,7 @@ class BarangExportController extends Controller
         ]);
     }
 
-    function StoreBarang(request $request)
+    function StoreBarang(Request $request)
     {
         $barang = BarangExport::create([
             "nama_barang" => $request->nama_barang,
@@ -33,35 +33,4 @@ class BarangExportController extends Controller
         ]);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(BarangExport $barangExport)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(BarangExport $barangExport)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, BarangExport $barangExport)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(BarangExport $barangExport)
-    {
-        //
-    }
 }

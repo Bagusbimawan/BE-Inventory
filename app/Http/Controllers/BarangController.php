@@ -16,7 +16,7 @@ class BarangController extends Controller
         ]);
     }
 
-    function StoreBarang(request $request)
+    function StoreBarang(Request $request)
     {
         $barang = Barang::create([
             "nama_barang" => $request->nama_barang,
@@ -45,7 +45,6 @@ class BarangController extends Controller
             "data"=>$barang
         ]);
     }
-
     
     function DestroyBarang($id_barang)
     {
